@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+ <h4 align="center">
+   <font size="10" >회원가입</font>
+ </h4>
+  <form action="">
+    <table border="1" cellspacing="0" cellpadding="8" align="center">
+      <tr>
+        <td>아이디</td>
+        <td>
+            <input type="text" name="id">
+            <input type="button" name="dupl" value="중복확인">
+        </td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td>
+            <input type="text" name="nm">
+        </td>
+      </tr>
+      <tr>
+        <td>성별</td>
+        <td>
+            <input type="radio" name="gender" checked>남
+            <input type="radio" name="gender">녀
+        </td>
+      </tr>
+      <tr>
+        <td>암호</td>
+        <td>
+        <input type="password" name="pw">
+        </td>
+      </tr>
+      <tr>
+        <td>암호확인</td>
+        <td>
+          <input type="password" name="pw2"> *같은 암호를 입력하세요.
+        </td>
+      </tr>
+      <tr>
+        <td>이메일</td>
+        <td>
+        <input type="text" name="em1">@
+        <input type="text" name="em2">
+        <select name="email" id="email_select">
+          <option value="v1">naver.com</option>
+          <option value="v2">daum.net</option>
+          <option value="v3">google.com</option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td>주소</td>
+        <td>
+        <input type="text" name="address" id="addr">
+        <input type="button" name="address_find" id="addr_find" value="주소찾기">
+        </td>
+      </tr>
+      <tr>
+        <td>휴대폰</td>
+        <td>
+        <input type="radio" name="celphone" id="cel1">SKT
+        <input type="radio" name="celphone" id="cel2">KT
+        <input type="radio" name="celphone" id="cel3">U+<br>
+        <select name="number" id="nm_select">
+          <option value="n1">010</option>
+          <option value="n2">011</option>
+          <option value="n3">016</option>
+        </select> - 
+        <input type="number" id="celnum1"> - 
+        <input type="number" id="celnum2">
+        </td>
+      </tr>
+      <tr>
+        <td>관심</td>
+        <td>
+          <input type="checkbox" name="chk1">쇼핑
+          <input type="checkbox" name="chk2">게임
+          <input type="checkbox" name="chk3">여행
+          <input type="checkbox" name="chk4">기타
+        </td>
+      </tr>
+      <tr>
+        <td>자기소개</td>
+        <td>
+          <textarea name="tt" id="" cols="80" rows="10"></textarea>
+        </td>
+      </tr>
+    </table>
+    
+    <p align="center">
+      <input type="submit" value="확인">
+      <input type="reset" value="다시입력">
+    </p>
+  </form>
+</body>
+</html>

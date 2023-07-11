@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style>
+		#container{
+			width: 500px;
+			height: 150px;
+			border: 1px solid blue;
+		}
+		div, p{
+			display: inline-block;
+			border: 1px solid black;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+		}
+		p{
+			width: 50px;
+			height: 50px;
+		}
+		/*#container >p{ 문제 1번
+			background-color: yellow;
+		}*/
+		
+/*		div p{ 문제 2번
+			background-color: yellow;
+		}*/
+		
+/*		#part +p{ 문제 3번
+			background-color: yellow;
+		}*/
+		
+		/*#part ~p{ 문제 4번
+			background-color: yellow;
+		}*/
+		
+/*		#container{ 문제 5번
+			background-color: yellow;
+		}
+		#sub,#container >p{
+			background-color: white;
+		}*/
+		
+		/*		#sub{ 문제 6번
+			background-color: yellow;
+		}
+		#sub>p{
+			background-color: white;
+		}*/
+		
+/*		#part{ 문제 7번
+			background-color: yellow;
+		}*/
+		
+/*		#sub >p{ 문제8번
+			background-color: yellow;
+		}*/
+		
+/*		#part +p +p{ 문제9번
+			background-color: yellow;
+		}*/
+		
+/*		#container p:nth-child(2n){
+			background-color: yellow;
+		}*/
+		
+/*		#container >p{ 문제9번
+			background-color: yellow;
+		}
+		#container p:nth-child(3){
+			background-color: white;
+		}*/
+		
+
+		
+		
+	</style>
+	
+</head>
+<body>
+	<div id="container">
+		<div id="sub">
+			<p>div p</p>
+		</div>
+		<p id="part">p</p>
+		<p>p</p>
+		<p>p</p>
+	</div>
+</body>
+</html>

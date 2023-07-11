@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.list>li{ /*손자를 제외한 직계 자손만을 바꾼다.*/
+			color: red;
+		}
+		.sub ~ li{ /* 모든 형제 노드를 의미 -> a, b*/
+			color: blue;
+		}
+		.sub + li{ /*바로 밑에 있는 형제만을 의미 -> b*/
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li class="sub">a</li>
+		<li>b</li>
+		<li>c</li>
+		<ul>
+			<li>d</li>
+			<li>e</li>
+		</ul>
+		
+	</ul>
+</body>
+</html>

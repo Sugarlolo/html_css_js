@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			border: 1px solid black;
+		}
+		
+		#box{
+			width: 200px;
+			height: 200px;
+		}
+		#subbox{
+			width: 100px;
+			height: 100px;
+		}
+		#subbox div{ /* 띄어쓰기는 subbox 내의 자식 div를 의미함 */
+			width: 50px;
+			height: 50px;
+		}
+		div#subbox{
+			background-color: fuchsia
+		}
+		
+		#box div div{
+			background-color: navy;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		1번
+		<div id="subbox">
+			2번
+			<div>
+				3번
+			</div>
+		</div>
+	</div>
+</body>
+</html>
